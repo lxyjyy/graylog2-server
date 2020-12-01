@@ -38,7 +38,7 @@ type Props = {
   availableGrantees: GranteesList,
   availableCapabilities: CapabilitiesList,
   className?: string,
-  granteesSelectRef: typeof Select | null | undefined,
+  granteesSelectRef: React.Ref<typeof Select>,
   onSubmit: (req: SelectionRequest) => Promise<EntityShareState | null | undefined>,
 };
 

@@ -40,7 +40,7 @@ type Props = {
   entityTitle: $PropertyType<SharedEntity, 'title'>,
   entityShareState: EntityShareState,
   setDisableSubmit: (boolean) => void,
-  granteesSelectRef: typeof Select | null | undefined,
+  granteesSelectRef: React.Ref<typeof Select>,
 };
 
 const Section = styled.div`
