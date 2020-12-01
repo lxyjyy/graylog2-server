@@ -41,6 +41,7 @@ class TimeoutUnitSelect extends React.Component {
 
   render() {
     return (
+      // @ts-ignore this ref needs to be removed
       <TimeoutSelect ref={(sessionTimeoutUnit) => { this.sessionTimeoutUnit = sessionTimeoutUnit; }}
                      options={this.options}
                      {...this.props} />
