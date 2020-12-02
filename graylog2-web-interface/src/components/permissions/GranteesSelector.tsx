@@ -128,6 +128,7 @@ const GranteesSelector = ({ availableGrantees, availableCapabilities, className,
                                     onChange={(granteeId) => onChange({ target: { value: granteeId, name } })}
                                     optionRenderer={_renderGranteesSelectOption}
                                     options={granteesOptions}
+                                    // @ts-ignore
                                     ref={granteesSelectRef}
                                     placeholder="Search for users and teams"
                                     value={value} />

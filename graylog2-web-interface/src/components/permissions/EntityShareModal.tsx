@@ -53,7 +53,9 @@ const EntityShareModal = ({ description, entityId, entityType, entityTitle, enti
   const _handleSave = () => {
     setDisableSubmit(true);
     const granteesSelect = granteesSelectRef?.current;
+    // @ts-ignore
     const granteesSelectValue = granteesSelect?.state?.value;
+    // @ts-ignore
     const granteesSelectOptions = granteesSelect?.props?.options;
     const payload: EntitySharePayload = {
       selected_grantee_capabilities: entityShareState.selectedGranteeCapabilities,
